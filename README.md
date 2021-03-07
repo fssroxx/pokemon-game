@@ -1,3 +1,6 @@
+![image](https://user-images.githubusercontent.com/63402014/110255585-8f926700-7fa5-11eb-8b91-5f7d120f9346.png)
+ДЗ с начальных этапов зар марафона по react.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
