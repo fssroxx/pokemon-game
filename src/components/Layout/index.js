@@ -1,8 +1,8 @@
 import l from './style.module.css';
 
 
-const Layout = ({id, title, descr, urlBg, colorBg}) => {
-   const classNames = [l.desc,l.full].join(' ');
+const Layout = ({id, title, children, urlBg, colorBg}) => {
+   
     return(
     <>
     <section className={l.root} id={id} style={colorBg ? {backgroundColor:colorBg } : {backgroundImage:`url(${urlBg})`} }>
@@ -12,8 +12,8 @@ const Layout = ({id, title, descr, urlBg, colorBg}) => {
                     <h3>{title}</h3>
                     <span className={l.separator}></span>
                 </div>
-                <div className={classNames}>
-                    <p>{descr}</p>
+                <div className={`${l.desc} ${l.full}`}>
+                    {children}
                 </div>
             </article>
         </div>
